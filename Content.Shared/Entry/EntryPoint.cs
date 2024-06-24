@@ -135,6 +135,9 @@ namespace Content.Shared.Entry
                 if (!_resMan.TryContentFileRead(path, out var stream))
                     continue;
 
+                if (!path.Extension.Equals("yml", StringComparison.InvariantCultureIgnoreCase))
+                    continue;
+
                 using var reader = new StreamReader(stream, EncodingHelpers.UTF8);
                 var documents = DataNodeParser.ParseYamlStream(reader).FirstOrDefault();
 
