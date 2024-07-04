@@ -4,4 +4,4 @@
 	branch = master
 [submodule "Content.AL.UIKit"]
 	path = Content.AL.UIKit
-	url = git@github.com:moonheart08/Content.AL.UIKit.git
+	url = https://github.com/moonheart08/Content.AL.UIKit.git
